@@ -12,6 +12,7 @@ export default function Navbar() {
           justifyContent: "space-between",
         }}
       >
+        
         <View
           id="left"
           style={{ flexDirection: "row", alignItems: "center" }}
@@ -19,10 +20,10 @@ export default function Navbar() {
           <TouchableOpacity onPress={()=>{Alert.alert("BİLDİRİM🔴","Bu bir test bildirimidir.")}}>
             <Image
               source={require("../assets/profil.png")}
-              style={{ height: 70, width: 70, top: 10 }}
+              style={{ height: 70, width: 70}}
             />
           </TouchableOpacity>
-          <Text style={{ color: "white", fontSize: 20, top: 5, left: 5 }}>
+          <Text style={{ color: "white", fontSize: 20, left: 5 }}>
             Username
           </Text>
         </View>
@@ -38,7 +39,7 @@ export default function Navbar() {
           <TouchableOpacity>
             <Image
               source={require("../assets/cikis.png")}
-              style={{ height: 55, width: 55, top: 10, right: 15 }}
+              style={{ height: 55, width: 55, right: 15 }}
             />
           </TouchableOpacity>
         </View>

@@ -18,13 +18,15 @@ function TabNavigator() {
         headerShown: false,
         tabBarStyle: {
           position: "absolute",
-          bottom: 10,
+          bottom: 30,
           right: "5%",
           left: "5%",
           width: "90%",
           height: 80,
           borderRadius: 15,
           backgroundColor: "#7843E6",
+          textAlignVertical: 'center',
+          paddingBottom: 0
         },
       }}
     >
@@ -35,7 +37,7 @@ function TabNavigator() {
           tabBarIcon: () => (
             <Image
               source={require("./assets/home.png")}
-              style={{ width: 60, height: 60 }}
+              style={{ width: 60, height: 60}}
             />
           ),
         }}

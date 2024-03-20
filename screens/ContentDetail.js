@@ -1,4 +1,4 @@
-import { View, Text, SafeAreaView, StyleSheet } from "react-native";
+import { View, Text, ScrollView, StyleSheet } from "react-native";
 import React from "react";
 import Navbar from "../layout/Navbar";
 
@@ -6,10 +6,13 @@ import Navbar from "../layout/Navbar";
 
 export default function ContentDetail() {
   return (
-    <SafeAreaView style={{ width: "100%", height: "100%" }}>
+    <View style={{ width: "100%", height: "100%" }}>
       <Navbar />
 
+      
       <View style={{ flex: 7, backgroundColor: "#18181B" }}>
+
+      <ScrollView>
         <View
           id="box"
           style={{
@@ -20,17 +23,19 @@ export default function ContentDetail() {
             marginTop: 50,
             borderRadius: 20,
           }}
-        ></View>
+        />
 
+       
         <View style={{width:"80%",alignSelf:"center", paddingTop:10}}>
           <Text style={styles.text}>İlan Başlığı: test</Text>
           <Text style={styles.text}>İlan Başlığı: test</Text>
           <Text style={styles.text}>İlan Başlığı: test</Text>
-          <Text style={styles.text}>İlan Başlığı: test</Text>
+          <Text style={styles.lastext}>İlan Başlığı: test</Text>
         </View>
-
+        </ScrollView>
       </View>
-    </SafeAreaView>
+      
+    </View>
 
     
     
@@ -42,6 +47,14 @@ const styles = StyleSheet.create({
     color:"white",
     fontSize:15,
     fontWeight:"500",
-    lineHeight:25
+    lineHeight:25,
+    paddingBottom:10
+  },
+  lastext:{
+    color:"white",
+    fontSize:15,
+    fontWeight:"500",
+    lineHeight:25,
+    paddingBottom:20
   }
 })
