@@ -1,16 +1,12 @@
 import { View, Text, ScrollView, StyleSheet } from "react-native";
 import React from "react";
-import Navbar from "../layout/Navbar";
-
-
 
 export default function ContentDetail() {
+  
   return (
     <View style={{ width: "100%", height: "100%" }}>
-      <Navbar />
-
       
-      <View style={{ flex: 7, backgroundColor: "#18181B" }}>
+      <View style={{ flex: 12, backgroundColor: "#18181B" }}>
 
       <ScrollView>
         <View
